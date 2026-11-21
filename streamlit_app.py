@@ -12,7 +12,8 @@ st.subheader("seção 2")
 st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )
-st.markdown(":thumbsup: :books:")
+
+st.markdown(":wizard: :books:")
 st.markdown("""---""")
 st.markdown("HTML")
 html_code = """ 
