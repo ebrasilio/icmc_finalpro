@@ -25,12 +25,12 @@ st.markdown("""---""")
 st.markdown("Imagens")
 
 # imagens
-colunas =st.columns(3)
+#colunas =st.columns(3)
 st.write("nossas redes:")
-colunas[0].image("img/foto1.pg")
-colunas[1].image("img/foto2.pg")
-colunas[2].image("img/foto3.pg")
-st.image("img/animada.gif")
+#colunas[0].image("img/foto1.pg")
+#colunas[1].image("img/foto2.pg")
+#colunas[2].image("img/foto3.pg")
+#st.image("img/animada.gif")
 
 
 # formulario aula 5:
