@@ -25,21 +25,21 @@ st.markdown("""---""")
 st.markdown("Imagens")
 
 # imagens
-#colunas =st.columns(3)
+colunas =st.columns(3)
 st.write("nossas redes:")
-#colunas[0].image("img/foto1.pg")
-#colunas[1].image("img/foto2.pg")
-#colunas[2].image("img/foto3.pg")
-#st.image("img/animada.gif")
-
-
-# formulario aula 5:
-nome = st.text_input("Infomr seu nome:", placeholder="preencha seu nome")
-idade = st.number_input("Idade:", min_value=8, max_value=80, step=1)
-nasc = st.date_input("data nascimento: ", format="DD/MM/YYYY")
-horaAtual = st.time_input("selecione a hora", step=60) # a cada 15 minutos
-# para agendar step = tempo em segundos
-corPerfil = st.color_picker("selecione a cor")
+colunas[0].image("img/4stationa.png")
+colunas[1].image("img/arvore.png")
+colunas[2].image("img/chuva.png")
+st.image("img/animada.gif")
+st.markdown("""---""")
+with st.form("cadastro"):
+    # campos para o formulario aula 5:
+    nome = st.text_input("Infomr seu nome:", placeholder="preencha seu nome")
+    idade = st.number_input("Idade:", min_value=8, max_value=80, step=1)
+    nasc = st.date_input("data nascimento: ", format="DD/MM/YYYY")
+    horaAtual = st.time_input("selecione a hora", step=60) # a cada 15 minutos
+    # para agendar step = tempo em segundos
+    corPerfil = st.color_picker("selecione a cor")
 
 st.write("Nome: ",nome)
 st.write("Idade: ", idade)
@@ -51,3 +51,6 @@ html_code = """
 
 """.format(corPerfil)
 st.markdown(html_code, unsafe_allow_html=True)
+
+# enviar formulario para banco????
+# fazer validação
