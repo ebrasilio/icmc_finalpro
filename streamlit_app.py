@@ -27,10 +27,12 @@ st.markdown("Imagens")
 # imagens
 colunas =st.columns(3)
 st.write("nossas redes:")
-colunas[0].image("img/4stationa.png")
+colunas[0].image("img/4stations.png")
 colunas[1].image("img/arvore.png")
 colunas[2].image("img/chuva.png")
-st.image("img/animada.gif")
+
+st.image("img/christmas-tree.gif")
+
 st.markdown("""---""")
 with st.form("cadastro"):
     # campos para o formulario aula 5:
@@ -40,6 +42,7 @@ with st.form("cadastro"):
     horaAtual = st.time_input("selecione a hora", step=60) # a cada 15 minutos
     # para agendar step = tempo em segundos
     corPerfil = st.color_picker("selecione a cor")
+    btnFormCadastro = st.form_submit_button("Cadastrar")
 
 st.write("Nome: ",nome)
 st.write("Idade: ", idade)
